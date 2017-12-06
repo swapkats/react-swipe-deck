@@ -15,7 +15,7 @@ class SwipeCards extends Component {
       containerSize: { x: 0, y: 0 }
     }
     this.removeCard = this.removeCard.bind(this)
-    this.setSize = this.setSize.bind(this)
+    // this.setSize = this.setSize.bind(this)
   }
   removeCard (side, cardId) {
     const { children, onEnd } = this.props
@@ -30,7 +30,7 @@ class SwipeCards extends Component {
   }
 
   componentDidMount () {
-    this.setSize()
+    // this.setSize()
     // window.addEventListener('resize', this.setSize)
   }
    componentWillUnmount () {
