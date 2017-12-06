@@ -31,20 +31,20 @@ class SwipeCards extends Component {
 
   componentDidMount () {
     this.setSize()
-    window.addEventListener('resize', this.setSize)
+    // window.addEventListener('resize', this.setSize)
   }
    componentWillUnmount () {
-    window.removeEventListener('resize', this.setSize)
+    // window.removeEventListener('resize', this.setSize)
   }
 
-  setSize () {
-    const container = ReactDOM.findDOMNode(this)
-    const containerSize = {
-      x: container.offsetWidth,
-      y: container.offsetHeight
-    }
-    this.setState({ containerSize })
-  }
+  // setSize () {
+  //   const container = ReactDOM.findDOMNode(this)
+  //   const containerSize = {
+  //     x: container.offsetWidth,
+  //     y: container.offsetHeight
+  //   }
+  //   this.setState({ containerSize })
+  // }
 
   render () {
     const { index, containerSize } = this.state
