@@ -1,0 +1,30 @@
+.master-root {
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  height: 200px;
+  width: 180px;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.animate {
+  transition: transform .3s;
+  box-shadow: none;
+}
+
+.inactive {
+  box-shadow: none;
+}
+
+.cards {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
