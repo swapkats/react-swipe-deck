@@ -30,6 +30,7 @@ class DraggableCard extends Component {
     }
 
     this.setState({
+      swipeDirection: 'none',
       x: initialPosition.x,
       y: initialPosition.y,
       initialPosition: initialPosition,
