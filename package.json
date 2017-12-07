@@ -1,6 +1,6 @@
 {
   "name": "react-swipe-deck",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Tinder style swipe deck",
   "repository": {
     "type": "git",
@@ -38,8 +38,8 @@
     "@storybook/react": "3.2.17"
   },
   "peerDependencies": {
-    "react": "16.0.1",
-    "react-dom": "16.0.1"
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
