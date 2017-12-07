@@ -13,7 +13,7 @@ const calculateAngle = (distance, boundary = 300) => {
 
 export const translate3d = (x, y, beingSwiped = false, initialPosition) => {
   let translate;
-  console.log(initialPosition, x, y);
+  // console.log(initialPosition, x, y);
   if (!beingSwiped) {
     translate = `translate3d(${x}px, ${y}px, 0px)`
   } else {

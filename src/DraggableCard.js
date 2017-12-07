@@ -75,7 +75,7 @@ class DraggableCard extends Component {
     this.setState(this.calculatePosition( ev.deltaX, ev.deltaY ))
   }
   pancancel (ev) {
-    console.log(ev.type)
+    // console.log(ev.type)
   }
 
   handlePan (ev) {
@@ -85,7 +85,7 @@ class DraggableCard extends Component {
   }
 
   handleSwipe (ev) {
-    console.log(ev.type)
+    // console.log(ev.type)
   }
 
   calculatePosition (deltaX, deltaY) {
