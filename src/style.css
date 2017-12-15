@@ -8,6 +8,7 @@
   height: 200px;
   width: 180px;
   cursor: pointer;
+  will-change: 'transform';
   transform-origin: center center;
 }
 

@@ -1,9 +1,9 @@
-import React, { Component, cloneElement } from 'react'
+import React, { cloneElement } from 'react'
 import ReactDOM from 'react-dom'
 import { DIRECTIONS } from './utils'
 // import './style.css'
 
-class SwipeCards extends Component {
+class SwipeCards extends React.PureComponent {
   constructor (props) {
     super(props)
     this.state = {
