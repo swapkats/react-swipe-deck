@@ -89,7 +89,11 @@ class DraggableCard extends Component {
   }
 
   calculatePosition (deltaX, deltaY) {
-    this.setState({ swipeDirection: deltaX < 0 ? 'left' : 'right' });
+    const { swipeDirection } = this.state;
+    const newSwipeDirection = deltaX < 0 ? 'left' : 'right';
+    if (swipeDirection !== newSwipeDirection) {
+      this.setState({ swipeDirection: newSwipeDirection });
+    }
     const { initialPosition : { x, y } } = this.state
     return {
       x: (x + deltaX),
